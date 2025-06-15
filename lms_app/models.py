@@ -14,9 +14,10 @@ class InstructorProfile(models.Model):
 class Assessment(models.Model):
     title = models.CharField(max_length=255)
     description =models.TextField()
-    
+    course_deadlines = models.DateTimeField(null=True,blank=True)
     def __str__(self):
         return f"{self.title}"
+    
 class CourseList(models.Model):
     ROLE_CHOICES = [
     ('easy', 'Easy'),
@@ -28,7 +29,7 @@ class CourseList(models.Model):
     instructor = models.ForeignKey(InstructorProfile, on_delete=models.CASCADE)
     difficulty_level = models.CharField(max_length=50,choices = ROLE_CHOICES )
     assessment = models.ForeignKey(Assessment,on_delete=models.CASCADE,null=True,blank=True)
-
+    
     def __str__(self):
         return f"{self.name}"
     
@@ -38,6 +39,7 @@ class StudentRecord(models.Model):
     assessment = models.ForeignKey(Assessment,on_delete=models.CASCADE,null=True,blank=True)
     complete_assessment = models.BooleanField(default = False)
     progress = models.IntegerField(default=0,help_text="Percentage completed(0-100)")
+    assessment_result = models.FloatField(null=True,blank=True)
     
     def __str__(self):
         return f"{self.name}"

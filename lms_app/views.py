@@ -5,8 +5,8 @@ from .serializers import CourseSerializer,InstructorProfileSerializer,StudentRec
 from rest_framework import filters
 from django_filters import rest_framework as filter
 from rest_framework.pagination import PageNumberPagination
-# Create your views here.
 
+# Create your views here.
 
 # Modify Pagination
 class Pages(PageNumberPagination):

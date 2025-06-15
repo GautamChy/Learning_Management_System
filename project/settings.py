@@ -50,6 +50,7 @@ INSTALLED_APPS = [
     
     'rest_framework.authtoken',
     
+    'drf_spectacular',
     
 ]
 
@@ -134,3 +135,23 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+# Looking to send emails in production? Check out our Email API/SMTP product!
+EMAIL_HOST = os.getenv('EMAIL_HOST')
+EMAIL_HOST_USER = os.getenv('EMAIL_HOST_USER')
+EMAIL_HOST_PASSWORD = os.getenv('EMAIL_HOST_PASSWORD')
+EMAIL_PORT = os.getenv('EMAIL_PORT')
+
+# For API Documentation.
+REST_FRAMEWORK = {
+   
+    'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',
+}
+SPECTACULAR_SETTINGS = {
+    'TITLE': 'Learning Management System API',
+    'DESCRIPTION': 'This is enhanced learning management system project',
+    'VERSION': '1.0.0',
+    'SERVE_INCLUDE_SCHEMA': False,
+    
+}
