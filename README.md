@@ -95,16 +95,16 @@ pip freeze > requirements.txt
 pip install -r requirements.txt
    
 
-. *Run migrations*:
-   bash
+. # Run migrations*:
+   
    python manage.py migrate
    
 
-. *Create superuser*:
-   bash
+. # Create superuser*:
+   
    python manage.py createsuperuser
    
 
-. *Run development server*:
-   bash
+. # Run development server*:
+   
    python manage.py runserver
