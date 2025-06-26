@@ -1,5 +1,5 @@
 
-A comprehensive Learning Management System with role-based access control, course management, student tracking, and sponsorship features.
+A comprehensive LEARNING MANAGEMENT SYSTEM with role-based access control, course management, student tracking, and sponsorship features.
 
 ROLES:
 	•	Admin: Oversee platform operations.
@@ -10,33 +10,25 @@ ________________________________________________________________________________
 
 FEATURES INCLUDED:
 	1.	CRUD (CREATE , READ , UPDATE , DELETE ) :
-    •	Making CRUD operations based on database design.
-    /
+            •	Making CRUD operations based on database design.
 	 2.	DATA FILTERING AND SEARCHING :
 	   •	Students can search for courselist by name, instructor, or difficulty level.
 	   •	Sponsors can filter students by status or progress.
-    /
 	3.	DATA PAGINATION :
 	   •	Paginate course lists, student records, and sponsorship details.
-    /
 	4.	AUTHENTICATION:
 	  •	Role-based authentication using Django Groups.
-   /
 	5.	ANALYTICS:
 	  •	Admin dashboard: Display metrics like total users, active courses, and student enrollments.
 	  •	Sponsor dashboard: Show sponsorship impact, student progress, and fund utilization.
-   /
 	6. EMAILING : ( USING MAILTTRAP )
 	  •	Notify students about course deadlines and assessment results.
 	  •	Notify sponsors about progress reports.
-   /
 	7.	Notification:
 	  •	Alerts for instructors on course completion rates and student engagement.
 	  •	Notifications for students about new assignments and due dates.
-   /
 	8.	Deployed (Optional):
 	  •	Host the application on free source.
-   /
 	9.	Testing and Documentation:
 	•	Provide detailed API tests and user/developer documentation.
 
