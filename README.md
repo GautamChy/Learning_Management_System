@@ -1,10 +1,13 @@
 
-A comprehensive LEARNING MANAGEMENT SYSTEM with role-based access control, course management, student tracking, and sponsorship features.
+ LEARNING MANAGEMENT SYSTEM with role-based access control, course management, student tracking, and sponsorship features.
 
 ROLES:
 	•	Admin: Oversee platform operations.
+ 
 	•	Instructor: Manage courses and assessments.
+ 
 	•	Student: Enroll in courses and complete assessments.
+ 
 	•	Sponsor: Fund students and track their progress.
 ________________________________________________________________________________________________________________________________________________
 
