@@ -8,10 +8,10 @@ ROLES:
 	•	Sponsor: Fund students and track their progress.
 ________________________________________________________________________________________________________________________________________________
 
-✅ Features Included
+✅ Features Included:
+
 	1.	CRUD (Create, Read, Update, Delete):
 	•	Make CRUD operations based on database design.
-
 	2.	Data Filtering and Searching:
 	•	Students can search for courses by name, instructor, or difficulty level.
 	•	Sponsors can filter students by status or progress.
