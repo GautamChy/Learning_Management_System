@@ -70,40 +70,41 @@ ________________________________________________________________________________
 
 ### SETUP INSTRUCTIONS
 
-1. *Create virtual environment*:
-   bash
-   python -m venv venv
-   source venv/bin/activate  # Linux/Mac
-   venv\Scripts\activate     # Windows
+# install virtualenv
+pip3 install virtualenv (For Mac)
+
+#create virtualenv
+virtualenv env
+python -m venv env
+
+#activate virtualenv
+env\Scripts\activate (For window)
+source env/bin/activate (For Mac/linux)
+
+#install django
+pip3 install django (for Mac)
+
+# start project 
+django-admin startproject project_name . (. is optional ans (.use garda file vitra ))
+
+#create app
+python3 manage.py startapp app_name
+
+# To show package ,it used when package install example startproject is a package.
+pip freeze > requirements.txt
+pip install -r requirements.txt
    
 
-3. *Install dependencies*:
-   bash
-   pip install -r requirements.txt
-   
-
-4. *Configure environment variables*:
-   Create .env file with:
-   env
-   SECRET_KEY=your_django_secret_key
-   DEBUG=True
-   DATABASE_URL=postgres://user:password@localhost:5432/lmsdb
-   EMAIL_HOST=your_smtp_host
-   EMAIL_PORT=587
-   EMAIL_HOST_USER=your_email
-   EMAIL_HOST_PASSWORD=your_password
-   
-
-5. *Run migrations*:
+. *Run migrations*:
    bash
    python manage.py migrate
    
 
-6. *Create superuser*:
+. *Create superuser*:
    bash
    python manage.py createsuperuser
    
 
-7. *Run development server*:
+. *Run development server*:
    bash
    python manage.py runserver
